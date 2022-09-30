@@ -225,7 +225,7 @@ Once configured the containers can be brought up using Docker Compose
     wp-wordpress        "docker-entrypoint.s…"   wordpress           running             9000/tcp
     ```
 
-The WordPress application can be reached at the designated host and port (e.g. [https://127.0.0.1:8443]()).
+The WordPress application can be reached at the designated host and port (e.g. [https://139.162.22.84:8443]()).
 
 - **NOTE**: you will likely have to acknowledge the security risk if using the included self-signed certificate.
 
@@ -268,7 +268,7 @@ $ docker-compose up -d adminer
  ⠿ Container wp-adminer   Started                                                                                                      0.9s
 ```
 
-Since Adminer is bypassing our Nginx configuration it will be running over HTTP in plain text on port 9000 (e.g. [http://127.0.0.1:9000/]())
+Since Adminer is bypassing our Nginx configuration it will be running over HTTP in plain text on port 9000 (e.g. [http://139.162.22.84:9000/]())
 
 ![](./imgs/WP-adminer.png)
 
