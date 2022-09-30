@@ -54,7 +54,7 @@ services:
       - wordpress
     ports:
       - "8080:80"    # http
-      - "8443:443"   # https
+      # - "8443:443"   # https
     volumes:
       - ${WORDPRESS_LOCAL_HOME}:/var/www/html
       - ${NGINX_CONF}:/etc/nginx/conf.d/default.conf
